@@ -39,14 +39,14 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'pry'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '3.1.0'
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-cucumber'
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '2.7.1'
 end
 
 group :development do

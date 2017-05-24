@@ -61,6 +61,14 @@ class ArticlesController < ApplicationController
     end
   end
 
+  protected
+
+  def resource_not_found
+    message = "Article not found dude..!!"
+    flash[:alert] = message
+    redirect_to root_path
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article
